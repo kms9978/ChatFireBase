@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".NewAccount2Activity">
+    tools:context=".NewAccount3Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical">
-
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -22,39 +21,31 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Set Password"
+            android:text="Input an E-Mail"
+            android:textColor="@color/black"
             android:layout_marginTop="50dp"
             android:layout_marginLeft="20dp"
-            android:textColor="@color/black"
-            android:textSize="35sp"/>
+            android:textSize="35sp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Please enter the password in 8 digits or more."
-            android:textColor="#80000000"
+            android:text="Please follow the email rules and fill it out."
             android:layout_marginTop="5dp"
             android:textSize="18sp"
-            android:layout_marginLeft="20dp"/>
-
+            android:layout_marginLeft="20dp"
+            android:textColor="#80000000"/>
         <EditText
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="150dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:hint="Input Password"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:hint="Re-enter password"/>
+            android:hint="Input E-mail"/>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom||right"
-        android:layout_weight="3"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -68,5 +59,4 @@
             app:tint="@android:color/white"
             android:contentDescription="GO" />
     </LinearLayout>
-
 </LinearLayout>
