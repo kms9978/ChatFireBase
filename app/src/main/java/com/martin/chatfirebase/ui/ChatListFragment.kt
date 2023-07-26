@@ -1,4 +1,4 @@
-package com.martin.chatfirebase
+package com.martin.chatfirebase.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,25 +7,23 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.martin.chatfirebase.databinding.FragmentChatlistBinding
-import com.martin.chatfirebase.databinding.FragmentMypageBinding
 
 
-class MyPageFragment : Fragment() {
+class ChatListFragment : Fragment() {
 
-    lateinit var binding: FragmentMypageBinding
+    lateinit var binding: FragmentChatlistBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMypageBinding.inflate(inflater, container, false)
+        binding = FragmentChatlistBinding.inflate(inflater, container, false)
 
         // ActionBar 숨기기
         (activity as AppCompatActivity).supportActionBar?.hide()
 
         return binding.root
     }
-
 
 
 }

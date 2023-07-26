@@ -1,11 +1,9 @@
-package com.martin.chatfirebase
+package com.martin.chatfirebase.ui
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
+import com.martin.chatfirebase.R
 import com.martin.chatfirebase.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

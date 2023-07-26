@@ -1,13 +1,13 @@
-package com.martin.chatfirebase
+package com.martin.chatfirebase.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import android.widget.ImageButton
 import androidx.activity.OnBackPressedCallback
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.martin.chatfirebase.R
 
 class NewAccount1Activity : AppCompatActivity() {
 

@@ -1,8 +1,8 @@
-package com.martin.chatfirebase
+package com.martin.chatfirebase.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageButton
+import com.martin.chatfirebase.R
 
 class NewAccount3Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
