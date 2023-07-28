@@ -12,19 +12,19 @@
         android:theme="@style/Theme.ChatFireBase"
         tools:targetApi="31">
         <activity
-            android:name=".ui.DetailChatActivity"
+            android:name=".ui.detailchat.DetailChatActivity"
             android:exported="false" />
         <activity
             android:name=".ui.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.NewAccount3Activity"
+            android:name=".ui.register.NewAccount3Activity"
             android:exported="false" />
         <activity
-            android:name=".ui.NewAccount2Activity"
+            android:name=".ui.register.NewAccount2Activity"
             android:exported="false" />
         <activity
-            android:name=".ui.NewAccount1Activity"
+            android:name=".ui.register.NewAccount1Activity"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"

@@ -1,4 +1,4 @@
-package com.martin.chatfirebase.ui
+package com.martin.chatfirebase.ui.register
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

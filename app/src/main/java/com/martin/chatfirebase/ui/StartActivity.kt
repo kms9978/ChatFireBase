@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.martin.chatfirebase.R
+import com.martin.chatfirebase.ui.register.NewAccount1Activity
 
 class StartActivity : AppCompatActivity() {
 

@@ -5,6 +5,9 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.martin.chatfirebase.R
 import com.martin.chatfirebase.databinding.ActivityMainBinding
+import com.martin.chatfirebase.ui.chatlist.ChatListFragment
+import com.martin.chatfirebase.ui.mypage.MyPageFragment
+import com.martin.chatfirebase.ui.user.UserListFragment
 
 class MainActivity : AppCompatActivity() {
 

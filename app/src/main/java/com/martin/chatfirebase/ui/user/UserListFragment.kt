@@ -1,4 +1,4 @@
-package com.martin.chatfirebase.ui
+package com.martin.chatfirebase.ui.user
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
