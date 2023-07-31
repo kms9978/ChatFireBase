@@ -1,8 +1,11 @@
 package com.martin.chatfirebase.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import com.martin.chatfirebase.R
 import com.martin.chatfirebase.databinding.ActivityMainBinding
 import com.martin.chatfirebase.ui.chatlist.ChatListFragment
@@ -21,13 +24,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        val currentUser = Firebase.auth.currentUser
-//
-//        if (currentUser == null) {
-//            // 로그인이 안되어있음
-//            startActivity(Intent(this, LoginActivity::class.java))
-//            finish()
-//        }
+        val currentUser = Firebase.auth.currentUser
+
+        if (currentUser == null) {
+            // 로그인이 안되어있음
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }
 
 
 
