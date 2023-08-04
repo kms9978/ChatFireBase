@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.register.NewAccount1Activity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,49 +17,76 @@
             android:id="@+id/back_Btn"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/baseline_arrow_back_ios_24"
-            android:background="@null"/>
+            android:background="@null"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Create a new account"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="50dp"
             android:layout_marginLeft="20dp"
-            android:textSize="35sp" />
+            android:layout_marginTop="50dp"
+            android:text="Create a new account"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Other users can view the profile."
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"
             android:layout_marginLeft="20dp"
-            android:textColor="#80000000"/>
-        <EditText
-            android:layout_marginTop="150dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:hint="Input User's Name"/>
+            android:layout_marginTop="5dp"
+            android:text="Other users can view the profile."
+            android:textColor="#80000000"
+            android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:orientation="vertical">
+                <EditText
+                    android:id="@+id/edt_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:drawableEnd="@drawable/baseline_badge_24"
+                    android:hint="Input User's Name" />
+
+                <EditText
+                    android:id="@+id/edt_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableEnd="@drawable/baseline_email_24"
+                    android:hint="Input User's Email" />
+
+                <EditText
+                    android:id="@+id/edt_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableEnd="@drawable/baseline_lock_24"
+                    android:hint="Input User's Password" />
+                </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="bottom|right"
-        android:layout_weight="1"
         android:orientation="vertical">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/go_New2"
+            android:id="@+id/signUpButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#101E22"
             android:layout_margin="16dp"
+            android:backgroundTint="#101E22"
+            android:contentDescription="GO"
             android:src="@drawable/baseline_arrow_forward_24_white"
             app:borderWidth="0dp"
-            app:tint="@android:color/white"
-            android:contentDescription="GO" />
+            app:tint="@android:color/white" />
     </LinearLayout>
 </LinearLayout>

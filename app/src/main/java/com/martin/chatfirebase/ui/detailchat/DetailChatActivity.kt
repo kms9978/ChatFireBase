@@ -40,7 +40,7 @@ class DetailChatActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailchatBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        supportActionBar?.hide()
         chatRoomId = intent.getStringExtra(EXTRA_CHAT_ROOM_ID) ?: return
         otherUserId = intent.getStringExtra(EXTRA_OTHER_USER_ID) ?: return
         myUserId = Firebase.auth.currentUser?.uid ?: ""

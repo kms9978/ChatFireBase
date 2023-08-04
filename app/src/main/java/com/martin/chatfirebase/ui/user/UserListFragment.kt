@@ -31,6 +31,9 @@ class UserListFragment : Fragment(R.layout.fragment_userlist) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentUserlistBinding.bind(view)
 
+        // Hide the ActionBar in the hosting Activity
+        (activity as AppCompatActivity).supportActionBar?.hide()
+
         val userListAdapter = UserAdapter { otherUser ->
             val myUserId = Firebase.auth.currentUser?.uid ?: ""
             val chatRoomDB = Firebase.database.reference.child(DB_CHAT_ROOMS).child(myUserId).child(otherUser.userId ?: "")

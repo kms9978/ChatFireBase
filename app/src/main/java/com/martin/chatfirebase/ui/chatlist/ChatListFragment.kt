@@ -28,6 +28,10 @@ class ChatListFragment : Fragment(R.layout.fragment_chatlist) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentChatlistBinding.bind(view)
 
+
+        // Hide the ActionBar in the hosting Activity
+        (activity as AppCompatActivity).supportActionBar?.hide()
+
         val chatListAdapter = ChatListAdapter { chatRoomItem ->
             val intent = Intent(context, DetailChatActivity::class.java)
             intent.putExtra(DetailChatActivity.EXTRA_OTHER_USER_ID, chatRoomItem.otherUserId)
