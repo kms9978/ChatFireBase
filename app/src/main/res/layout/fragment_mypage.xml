@@ -69,16 +69,6 @@
                         android:textColor="@color/black"
                         android:text="Test@gmail.com"/>
 
-                        <Button
-                            android:layout_marginHorizontal="20dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:layout_marginTop="10dp"
-                            android:text="QR CODE"
-                            android:gravity="start|center"
-                            android:drawableEnd="@drawable/baseline_arrow_forward_24"
-                            android:backgroundTint="@color/white" />
 
 
 
